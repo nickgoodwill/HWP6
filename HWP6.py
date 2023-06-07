@@ -14,3 +14,18 @@ for i in range(m):
 # Задача 32: Определить индексы элементов массива (списка),
 # значения которых принадлежат заданному диапазону
 # (т.е. не меньше заданного минимума и не больше заданного максимума)
+
+import random
+n = int(input("Введите min списка: "))
+k = int(input("Введите max списка: "))
+
+list = []
+new = []
+for _ in range(10):
+      list.append(random.randint(1, 10))
+print (list)
+
+for i in range (len(list)):
+    if list[i]>= n and list[i] <= k:
+        new.append(i)
+print (new)
